@@ -42,14 +42,13 @@ public class Account {
     }
 
     public boolean debit(double amount){
-        boolean successful = false;
+        
         if (amount > balance){
             System.out.println("Not enough funds available!");
+            return = false;
         }
-        else {
-            balance = balance-amount;
-            successful = true;
-        }
-        return successful;
+        
+            balance -= amount;
+            return = true;
     }
 }
